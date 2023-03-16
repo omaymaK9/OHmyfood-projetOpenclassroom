@@ -214,6 +214,64 @@ body, html{
   
   
   
+  /*******BOUTON*******/
+  
+  .button {
+    background: linear-gradient(90deg, #ff79da, #9356dc);
+    color: white;
+    border-radius: 50px;
+    border: none;
+  
+    padding: 1.5rem 4rem;
+    font-size: large;
+    box-shadow: 4px 4px 2px lightgrey;
+  }
+  
+  .button:hover{
+    box-shadow: 10px 10px 5px lightgrey;
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+  }
+  
+  
+  
+  .button_div {
+    display: flex;
+    text-align: center;
+    flex-flow: wrap column;
+    align-items: center;
+    padding: 2.5rem;
+  }
+  
+  
+  
+  
+  
+  
+  /********FOOTER******/
+  
+  .footer {
+    background-color: #353535;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-top:10px
+   
+  }
+  
+  
+  
+  .footer img {
+    color: white;
+    width: 25%;
+  }
+  
+  .icons_footer {
+    display: flex;
+    gap: 1rem;
+  }
+  
+
   
   @keyframes appear {
     from {
