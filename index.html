@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6387249096.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
@@ -15,18 +16,27 @@
 <body>
     <div class="page_container">
 
-    <!---HEADER-->
-    <header>
-            <div class="header">
-                <h1>
-                    <img src="img/logo/ohmyfood.png" alt="logo ohmyfood" />
-                </h1>
-            </div>
-    </header>
-     <!---HEADER-->
 
-     <!---MAIN--->
-    <main>
+        <div class="loader">
+            <div class="loader__animation"></div>
+        </div>
+
+
+
+        <!---HEADER-->
+        <header>
+            <div class="header">
+                <a href="index.html">
+                    <h1>
+                        <img src="img/logo/ohmyfood.png" alt="logo ohmyfood" />
+                    </h1>
+                </a>
+            </div>
+        </header>
+        <!---HEADER-->
+
+        <!---MAIN--->
+        <main>
             <section class="location">
                 <h2> <i class="fa-solid fa-location-dot"></i> Paris,Belleville</h2>
             </section>
@@ -42,27 +52,27 @@
 
                 <div class="grid">
 
-                    <article class="size">
+                    <article class="btn">
                         <p class="number">1</p>
                         <span class="icons"><i class="fas fa-mobile-alt"></i>
                         </span>
                         <h3>Choisissez un restaurant</h3>
-                    </article> 
+                    </article>
 
-                    <article class="size">
+                    <article class="btn">
                         <p class="number">2</p>
-                        <span class="icons"><i class="fas fa-list-ul"></i> 
+                        <span class="icons"><i class="fas fa-list-ul"></i>
                         </span>
                         <h3>Composez votre menu</h3>
                     </article>
 
-                    <article class="sizepink">
+                    <article id="dernier_btn" class="btn">
                         <p class="number">3</p>
-                        <span class="icons_pink"><i class="fas fa-store"></i>
+                        <span class=" icons"><i class="fas fa-store"></i>
                         </span>
                         <h3>Dégustez au restaurant</h3>
                     </article>
-                   
+
                 </div>
             </section>
 
@@ -72,16 +82,16 @@
                 <div class="section_restaurant_cards">
 
                     <article class="cards">
-                        <a href="#">
+                        <a href="palette.html"> 
                             <div class="card new">
-                                 <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image">
+                                <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image">
                             </div>
                             <footer class="card_footer">
                                 <div class="menu">
                                     <h4>La palette du gout</h4>
                                     <p>Ménilmontant</p>
                                 </div>
-                        
+
                                 <span class="fa-stack">
                                     <i class="far hrt-empty fa-heart fa-stack-1x"></i>
                                     <i class="fas fa-heart fa-stack-1x"></i>
@@ -92,9 +102,9 @@
 
 
                     <article class="cards">
-                        <a href="#">
+                        <a href="enchante.html">
                             <div class="card new">
-                                 <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image">
+                                <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image">
                             </div>
                             <footer class="card_footer">
                                 <div class="menu">
@@ -109,9 +119,9 @@
                         </a>
                     </article>
 
-                
+
                     <article class="cards">
-                        <a href="#">
+                        <a href="francaise.html">
                             <div class="card">
                                 <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image">
                             </div>
@@ -129,10 +139,11 @@
                     </article>
 
                     <article class="cards">
-                        <a href="#">
+                        <a href="delice.html">
                             <div class="card">
-                            
-                                <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image">
+
+                                <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                    alt="image">
                             </div>
                             <footer class="card_footer">
                                 <div class="menu">
@@ -149,23 +160,26 @@
                 </div>
             </section>
 
-    </main>  
-    <!---main--->
-    
+        </main>
+        <!---main--->
 
 
-     <!-- FOOTER -->
-    <footer class="footer">
-         <h1 class="ohmyfood">Ohmyfood</h1>
-        <div class="footer_information">
-            <p class="icons_footer"> <i class="fa-solid fa-utensils"></i> Proposer un restaurant </p>
-            <p class="icons_footer"> <i class="fa-light fa-handshake fas"></i> Devenir un restaurant</p>
-            <p>Mentions légales</p>
-            <p>Contact</p>
-        </div>
-    </footer>
 
-      <!-- FOOTER -->
+        <!-- FOOTER -->
+        <footer class="footer">
+            <h1 class="ohmyfood">Ohmyfood</h1>
+            <div class="footer_information">
+                <p class="icons_footer"> <i class="fa-solid fa-utensils"></i> Proposer un restaurant </p>
+                <p class="icons_footer"> <i class="fa-light fa-handshake fas"></i> Devenir un restaurant</p>
+                <p>Mentions légales</p>
+                <a href="mailto:contact@ohmyfood.fr">
+                    <p>Contact</p>
+                </a>
+            </div>
+        </footer>
+
+        <!-- FOOTER -->
     </div>
 </body>
+
 </html>

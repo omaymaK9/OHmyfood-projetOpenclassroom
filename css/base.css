@@ -1,0 +1,255 @@
+
+body, html{
+    margin: 0%;
+    font-family: Roboto,sans-serif;
+  }
+  
+  .ohmyfood{
+      font-family: 'Raleway', sans-serif;
+      font-size: 25px;
+  }
+  
+  .page_container{
+      box-sizing: border-box;
+      width: 100%; 
+      margin: 0px;
+  }
+  
+  .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 60px;
+      width: 100%;
+  }
+  
+  .icon-arrow-wrapper {
+      width: 30px;
+      display: flex;
+      top: 0;
+      padding-left: 30px;
+      text-decoration: none;
+      color: #000000;
+      font-size: 25px;
+  }
+  
+  .nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      
+  }
+  
+  
+  .menu_form{
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    transform: translateY(-70px);
+    margin-bottom: -80px;
+    background-color: #f6f6f6;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+  
+  
+  /******MAIN*****/
+  
+  .menu img{
+    height: 257px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  
+  /*********SECTION MENU*****/
+  
+  .menu{
+    background-color: #ffff;
+  }
+  
+  .titre{
+    font-size: 30px;
+    
+  }
+  
+  .fa-stack {
+    font-size: xx-large;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .fa-stack :nth-child(2) {
+    color: transparent;
+    transition: all 350ms;
+    padding: 0px;
+  }
+  
+  .fa-stack :nth-child(2):hover {
+    background: linear-gradient(to bottom left, #9356dc, #ff79da);
+    font-size: large;
+    transform: scale(2);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+  }
+  
+  
+  .plat{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem ;
+  }
+  
+  
+  .ENTRÉES{
+    font-size: 20px;
+    font-weight: lighter;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #99E2D0;
+    width: 50px;
+    padding-bottom: 10px;
+    margin-left: 2rem;
+  }
+  
+  .border{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-color: transparent;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 20px 20px;
+    box-shadow: 2px 2px lightgrey;
+    overflow: hidden;
+    height: 5rem;
+  }
+  
+  
+  .card_price{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu_text{
+   
+   display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex: 1;
+    
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-left: 20px;
+  }
+  
+  .menu_food{
+    font-size: 1em;
+     margin-bottom: 2px;
+     margin-top: 0;
+     text-overflow: ellipsis;
+     overflow: hidden;
+  }
+  
+  
+  .menu_description{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+    font-weight: lighter;
+    margin-bottom: 0;
+    margin-top: 2px;
+  }
+  
+  
+  .card__check {
+    color: #f6f6f6;
+    background-color: #273431;
+    font-size: xx-large;
+    text-align: center;
+    height: 3em;
+    /* hauteur du parent */
+    line-height: 3em;
+    /* hauteur de ligne (identique) */
+    white-space: nowrap;
+    /* interdiction de passer à la ligne */
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    transform: translateX(90px);
+    cursor: pointer;
+    transition: all 700ms;
+   
+  }
+  
+  
+  .menu_price{
+    padding-right: 25px;
+    padding-top: 20px;
+    font-weight: 900;
+  }
+  
+  
+  
+  .border:hover > .card__check {
+    width: 90px;
+    transform: translateX(0px);
+    background-color: #99e2d0;
+    cursor: pointer;
+    color: #f6f6f6;
+  
+  }
+  
+  
+  
+  
+  
+  @keyframes appear {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .menu_entrées{
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards;
+  }
+  
+  
+  .menu_plat{
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards;
+  }
+  
+  
+  .menu_plat{
+    animation-delay: 700ms;
+  }
+  
+  .menu_dessert{
+    animation-name: appear;
+    animation-duration: 1400ms;
+    animation-fill-mode: backwards;
+  }
+  
+  .menu_dessert{
+    animation-delay: 1.5s;
+  }

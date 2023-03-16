@@ -3,10 +3,10 @@ body {
     min-width: 320px;
     box-sizing: border-box;
     margin: 0%;
+    font-family: Roboto,sans-serif;
 }
 
-
-.ohmyfood{
+.ohmyfood {
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
 }
@@ -15,6 +15,10 @@ body {
 .page_container {
     margin: auto;
 }
+
+
+
+
 
 a {
     color: black;
@@ -31,10 +35,6 @@ a {
 .header img {
     width: 150px;
 }
-
-
-
-
 
 /*******section localisation****/
 
@@ -72,7 +72,7 @@ a {
 }
 
 
-.button:hover{
+.button:hover {
     box-shadow: 8px 8px 4px lightgrey;
     background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
 }
@@ -88,7 +88,7 @@ a {
 }
 
 
-.size {
+.btn {
     background-color: #f6f6f6;
     box-shadow: 4px 4px 2px lightgrey;
     border-radius: 20px 20px;
@@ -99,18 +99,9 @@ a {
     align-items: center;
 }
 
-.sizepink {
+#dernier_btn{
     background: #f5edff;
-    box-shadow: 4px 4px 2px lightgrey;
-    border-radius: 20px 20px;
-    margin: 1rem;
-    padding: 0.5rem;
-    display: flex;
-    padding-left: 1rem;
-    align-items: center;
 }
-
-
 
 .number {
     background: #9356dc;
@@ -119,12 +110,11 @@ a {
     height: 3rem;
     border-radius: 50%;
     position: relative;
-   left: -2rem;
+    left: -2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .icons {
     font-size: 30px;
@@ -132,16 +122,9 @@ a {
     padding-right: 15px;
 }
 
-.icons_pink{
-    font-size: 25px;
+.icons_pink {
     color: violet;
-    padding-right: 15px;
 }
-
-.size :hover {
-    background-color: plum;
-}
-
 
 
 /*****section restaurant******/
@@ -160,31 +143,28 @@ a {
     height: 100%;
 }
 
-    .new{
-         position: relative;
-         
-    }
+.new {
+    position: relative;
+}
 
 
 
-    .new::before {
-         content: "Nouveau";
-         color: #1a8a68;
-         font-weight: bold;
-         position: absolute;
-         height: 2rem;
-         width: 80px;
-         background-color:#99e2d0;
-         padding-top: 1rem;
-         right: 2rem;
-         text-align: center;
-         margin-top: 1rem;
-    }
+.new::before {
+    content: "Nouveau";
+    color: #1a8a68;
+    font-weight: bold;
+    position: absolute;
+    height: 2rem;
+    width: 80px;
+    background-color: #99e2d0;
+    padding-top: 1rem;
+    right: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
 
 
 /******les cards****/
-
-
 
 .cards img {
     height: 10rem;
@@ -218,21 +198,22 @@ a {
     position: relative;
     bottom: 10px;
     cursor: pointer;
-  }
-  .fa-stack :nth-child(2) {
+}
+
+.fa-stack :nth-child(2) {
     color: transparent;
     transition: all 350ms;
     padding: 0px;
-  }
-  .fa-stack :nth-child(2):hover {
+}
+
+.fa-stack :nth-child(2):hover {
     background: linear-gradient(to bottom left, #9356dc, #ff79da);
     font-size: large;
     transform: scale(2);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-  }
-  
+}
 
 .card_footer {
     padding: 1rem;
@@ -241,7 +222,6 @@ a {
     justify-content: space-between;
     height: 2rem;
 }
-
 
 /****section footer****/
 .footer {
@@ -252,7 +232,9 @@ a {
     flex-direction: column;
 }
 
-
+.footer a {
+    color: white;
+}
 
 .footer img {
     color: white;
@@ -266,48 +248,119 @@ a {
 
 
 
+/*** LOADER*****/
+
+header,
+main,
+footer {
+  animation-name: opacity;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(1, -0.30, 1.0, 1.0)  ;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.loader__animation {
+    /******creation du loader****/
+    border: 20px solid #9356dc;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid black;
+    border-radius: 40%;
+    width: 20px;
+    height: 50px;
+    -webkit-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    /****placement****/
+    position: absolute;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    /***duréee***/
+    
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
+    animation-fill-mode: forwards;
+}
+
+/*animation du loader*/
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+        border-top: 10px solid #9356dc;
+        opacity: 0;
+        box-shadow: 10px 10px black, 10px 10px #acabab;
+    }
+}
+
+
+
 
 
 @media screen and (min-width: 1024px) {
-     
 
-    .section_fonctionnement{
+
+    .section_fonctionnement {
         padding-left: 10rem;
         padding-right: 10rem;
     }
+
     .grid {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-    
-    .card_footer{
-       
+
+    .card_footer {
+
         padding-top: 1rem;
     }
 
-    .section_restaurant_cards{
+    .section_restaurant_cards {
         grid-template-columns: repeat(4, 1fr);
-        gap:1rem;  
+        gap: 1rem;
     }
 
 
-   .footer{
+    .footer {
         flex-direction: row-reverse;
         gap: 3rem;
         padding-right: 7rem;
         align-items: center;
-   }
+    }
 
-   .footer img {
+    .footer img {
         width: 5%;
-   }
-   
-   .footer_information{
+    }
+
+    .footer_information {
         display: flex;
         flex-direction: row;
-        gap:2rem;
-   }
+        gap: 2rem;
+    }
 
-   
+
 
 }
