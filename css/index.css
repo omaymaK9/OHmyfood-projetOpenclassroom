@@ -5,6 +5,7 @@ body {
     margin: 0%;
 }
 
+
 .ohmyfood{
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
@@ -30,6 +31,10 @@ a {
 .header img {
     width: 150px;
 }
+
+
+
+
 
 /*******section localisation****/
 
@@ -64,6 +69,12 @@ a {
     padding: 1.5rem;
     font-size: large;
     box-shadow: 4px 4px 2px lightgrey;
+}
+
+
+.button:hover{
+    box-shadow: 8px 8px 4px lightgrey;
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
 }
 
 /*******section fonctionnement*******/
