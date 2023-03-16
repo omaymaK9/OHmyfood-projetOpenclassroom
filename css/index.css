@@ -1,7 +1,15 @@
-.body {
+body {
     max-width: 1400px;
     min-width: 320px;
+    box-sizing: border-box;
+    margin: 0%;
 }
+
+.ohmyfood{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
 
 .page_container {
     margin: auto;
@@ -48,9 +56,6 @@ a {
     font-size: larger;
 }
 
-
-
-
 .button {
     background: linear-gradient(90deg, #ff79da, #9356dc);
     color: white;
@@ -60,7 +65,6 @@ a {
     font-size: large;
     box-shadow: 4px 4px 2px lightgrey;
 }
-
 
 /*******section fonctionnement*******/
 
@@ -78,10 +82,9 @@ a {
     box-shadow: 4px 4px 2px lightgrey;
     border-radius: 20px 20px;
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
-    gap: 2rem;
-    padding-left: 5rem;
+    padding-left: 1rem;
     align-items: center;
 }
 
@@ -90,10 +93,9 @@ a {
     box-shadow: 4px 4px 2px lightgrey;
     border-radius: 20px 20px;
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
-    gap: 2rem;
-    padding-left: 5rem;
+    padding-left: 1rem;
     align-items: center;
 }
 
@@ -102,30 +104,27 @@ a {
 .number {
     background: #9356dc;
     color: white;
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    position: absolute;
-    left: 2.5rem;
+    position: relative;
+   left: -2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-
-
-
-.section_fonctionnement .fas {
-    color: grey;
-
-}
-/*****animation****/
-
-
 .icons {
-    font-size: 25px;
+    font-size: 30px;
+    color: grey;
+    padding-right: 15px;
+}
 
+.icons_pink{
+    font-size: 25px;
+    color: violet;
+    padding-right: 15px;
 }
 
 .size :hover {
@@ -133,35 +132,13 @@ a {
 }
 
 
+
 /*****section restaurant******/
 
 .section_restaurant {
     background-color: #f2f2f2;
     padding: 2rem;
-
-   
 }
-
-
-
-
-/******les cards****/
-
-.nouveau {
-    font-weight: bold;
-    background-color: #99e2d0;
-    color: #1a8a68;
-    width: 80px;
-    text-align: center;
-    height: 3em;
-    position: absolute;
-    right: 4em;
-    text-align: center;
-    margin-top: 1rem;
-
-}
-
-
 
 
 .cards {
@@ -170,8 +147,33 @@ a {
     transition-duration: 0.1s;
     cursor: pointer;
     height: 100%;
-
 }
+
+    .new{
+         position: relative;
+         
+    }
+
+
+
+    .new::before {
+         content: "Nouveau";
+         color: #1a8a68;
+         font-weight: bold;
+         position: absolute;
+         height: 2rem;
+         width: 80px;
+         background-color:#99e2d0;
+         padding-top: 1rem;
+         right: 2rem;
+         text-align: center;
+         margin-top: 1rem;
+    }
+
+
+/******les cards****/
+
+
 
 .cards img {
     height: 10rem;
@@ -199,6 +201,28 @@ a {
 }
 
 
+/*****le coeur****/
+.fa-stack {
+    font-size: xx-large;
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+  }
+  .fa-stack :nth-child(2) {
+    color: transparent;
+    transition: all 350ms;
+    padding: 0px;
+  }
+  .fa-stack :nth-child(2):hover {
+    background: linear-gradient(to bottom left, #9356dc, #ff79da);
+    font-size: large;
+    transform: scale(2);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+  }
+  
+
 .card_footer {
     padding: 1rem;
     display: flex;
@@ -213,14 +237,66 @@ a {
     background-color: #353535;
     color: white;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 .footer img {
     color: white;
-    width: 20%;
+    width: 25%;
 }
 
 .icons_footer {
     display: flex;
     gap: 1rem;
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+     
+
+    .section_fonctionnement{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    .card_footer{
+       
+        padding-top: 1rem;
+    }
+
+    .section_restaurant_cards{
+        grid-template-columns: repeat(4, 1fr);
+        gap:1rem;  
+    }
+
+
+   .footer{
+        flex-direction: row-reverse;
+        gap: 3rem;
+        padding-right: 7rem;
+        align-items: center;
+   }
+
+   .footer img {
+        width: 5%;
+   }
+   
+   .footer_information{
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+   }
+
+   
+
 }
