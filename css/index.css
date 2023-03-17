@@ -18,7 +18,25 @@ body {
 
 
 
+.recherche {
+    background-color: #eaeaea;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: inset 0px 4px 10px -8px;
+    padding: 13px;
+ }
 
+ input {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    outline: none;
+    background-color: #eaeaea;
+    border: none;
+    width: 65%;
+}
 
 a {
     color: black;
