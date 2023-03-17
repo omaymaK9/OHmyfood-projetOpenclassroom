@@ -1,5 +1,4 @@
 body, html  {
-    box-sizing: border-box;
     margin: 0%;
     font-family: Roboto,sans-serif;
 }
@@ -21,7 +20,6 @@ body, html  {
     justify-content: center;
     display: flex;
     align-items: center;
-    width: 100%;
     box-shadow: inset 0px 4px 10px -8px;
     padding: 13px;
  }
