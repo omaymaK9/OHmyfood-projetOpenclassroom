@@ -5,7 +5,7 @@ body, html{
   }
   
   .ohmyfood{
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Shrikhand', cursive;
       font-size: 25px;
   }
   
@@ -74,7 +74,7 @@ body, html{
   
   .titre{
     font-size: 30px;
-    
+    font-family: 'Shrikhand', cursive;
   }
   
   .fa-stack {
@@ -109,7 +109,7 @@ body, html{
   }
   
   
-  .ENTRÉES{
+  .ENTREE{
     font-size: 20px;
     font-weight: lighter;
     border-bottom: 3px;
@@ -284,7 +284,7 @@ body, html{
     }
   }
   
-  .menu_entrées{
+  .menu_entrees{
     animation-name: appear;
     animation-duration: 1000ms;
     animation-fill-mode: backwards;
@@ -315,47 +315,36 @@ body, html{
 
 
 
+
+
 @media screen and (min-width: 1024px) {
+     
+ .menu_form{
+  margin-left: 10rem;
+  margin-right: 10rem;
+ }
 
 
-    .section_fonctionnement {
-        padding-left: 10rem;
-        padding-right: 10rem;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .card_footer {
-
-        padding-top: 1rem;
-    }
-
-    .section_restaurant_cards {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-    }
 
 
-    .footer {
-        flex-direction: row-reverse;
-        gap: 3rem;
-        padding-right: 7rem;
-        align-items: center;
-    }
+ .footer{
+  flex-direction: row-reverse;
+  gap: 3rem;
+  padding-right: 7rem;
+  align-items: center;
+}
 
-    .footer img {
-        width: 5%;
-    }
+.footer img {
+  width: 5%;
+}
 
-    .footer_information {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-    }
 
+
+.footer_information{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+}
 
 
 }
