@@ -1,4 +1,4 @@
-body {
+body, html  {
     max-width: 1900px;
     min-width: 320px;
     box-sizing: border-box;
