@@ -9,10 +9,6 @@ body, html  {
 }
 
 
-.placeholder {
-    color: black;
-}
-
 
 
 .recherche {
@@ -257,7 +253,7 @@ a {
  .title_footer{
     padding-left: 2rem;
     font-family: 'Shrikhand', cursive;
-    padding-top: 1rem;
+    
  }
 
 .footer {
