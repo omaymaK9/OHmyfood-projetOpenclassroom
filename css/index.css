@@ -31,7 +31,7 @@ body, html  {
     outline: none;
     background-color: #eaeaea;
     border: none;
-    width: 65%;
+    width: 80%;
 }
 
 a {
@@ -293,9 +293,7 @@ footer ul {
   }
   
 
- footer .ohmyfood{ 
-margin: 0 0 1rem;
-}
+
 /*** LOADER*****/
 
 header,
