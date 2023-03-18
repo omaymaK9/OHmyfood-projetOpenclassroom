@@ -153,19 +153,20 @@ body, html{
   
   .menu_text{
    
-   display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      flex: 1;
-    
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 20px;
   }
   
   .menu_food{
-    font-size: 1em;
+      
+     font-size: 1em;
      margin-bottom: 2px;
      margin-top: 0;
      text-overflow: ellipsis;
@@ -174,6 +175,7 @@ body, html{
   
   
   .menu_description{
+      
     display: block;
     white-space: nowrap;
     overflow: hidden;
@@ -204,6 +206,7 @@ body, html{
    
   }
   
+
   
   .menu_price{
     padding-right: 25px;
@@ -223,6 +226,18 @@ body, html{
   }
   
   
+  
+  
+  .card__check:hover .fa-check-circle {
+    transform: rotate(0deg);
+  }
+  
+
+   .fa-check-circle{
+    transform: rotate(780deg);
+    transition: transform 1s;
+
+  }
   
   
   /*******BOUTON*******/
