@@ -312,9 +312,6 @@ footer ul {
   }
   
 
- footer .ohmyfood{ 
-    margin: 0 0 1rem;
-  }
 
   @keyframes appear {
     from {
@@ -389,9 +386,6 @@ footer ul {
     gap: 2rem;
 }
     
-.title_footer{
-    padding-top: 0rem;
- }
 
 
 
